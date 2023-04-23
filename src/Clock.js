@@ -12,7 +12,7 @@ function Clock() {
     return function cleanup() {
       clearInterval(timerID);
     };
-  }, []);
+  }, [timeremaining, onAnswered]);
 
   return <div>{time.toString()}</div>;
 }
